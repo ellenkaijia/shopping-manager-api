@@ -28,9 +28,10 @@ import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kingdee.finance.commons.utils.date.DateUtils;
-import com.kingdee.finance.fixin.easyui.Page;
-import com.kingdee.finance.fixin.util.StringTools;
+import com.server.api.easyui.Page;
+import com.server.api.util.DateUtils;
+import com.server.api.util.StringTools;
+
 
 /**
  * 分页拦截器，用于拦截需要进行分页查询的操作，然后对其进行分页处理。 利用拦截器实现Mybatis分页的原理：
@@ -350,7 +351,6 @@ public class PageInterceptor implements Interceptor{
 		}
 	}
 
-    @Override
 	public void setProperties(Properties properties) {
         try{
             this.showSql = Boolean.valueOf(properties.getProperty("showSql"));  
