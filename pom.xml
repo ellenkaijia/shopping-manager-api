@@ -8,7 +8,7 @@
 		<relativePath>../shopping-parent/pom.xml</relativePath>
 	</parent>
 	<groupId>com.mhdq.net</groupId>
-	<artifactId>shopping-server-api</artifactId>
+	<artifactId>shopping-manager-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
