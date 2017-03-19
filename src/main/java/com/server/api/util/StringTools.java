@@ -54,7 +54,15 @@ public class StringTools {
 		return src.replaceFirst(first,upper);
 	}
 	
-	
+	 
+    /**
+     * 判断字符串是否为空或空白串。
+     * @param str
+     * @return 若字符串为null或空白串返回true
+     */
+    public static boolean isNull(String str){
+        return str==null || str.trim().length()<1;
+    }
 	
 	/**
 	 * 判断字符串是否为空或者空字符串
