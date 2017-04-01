@@ -14,4 +14,6 @@ import com.mhdq.rpc.RpcRespDTO;
 public interface ProductResMsService {
 
 	RpcRespDTO<Integer> createProductRes(List<ProductResDTO> list);
+	
+	List<ProductResDTO> getProductResList(String prodId);
 }

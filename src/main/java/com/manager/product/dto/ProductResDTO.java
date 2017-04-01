@@ -21,7 +21,7 @@ public class ProductResDTO implements Serializable {
 	
 	private String resParentId;
 	
-	private String resSeq;
+	private Integer resSeq;
 	
 	private String prodId;
 
@@ -49,11 +49,11 @@ public class ProductResDTO implements Serializable {
 		this.resParentId = resParentId;
 	}
 
-	public String getResSeq() {
+	public Integer getResSeq() {
 		return resSeq;
 	}
 
-	public void setResSeq(String resSeq) {
+	public void setResSeq(Integer resSeq) {
 		this.resSeq = resSeq;
 	}
 
