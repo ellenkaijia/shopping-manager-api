@@ -91,6 +91,18 @@ public class GenerateCode {
 	        builder.append(getRandomNum(1000));
 	        return builder.toString();
 	    }
+	    
+	    /**
+	     * 生成品牌编号
+	     * @return
+	     */
+	    public static String generateBandId(){
+	        StringBuilder builder = new StringBuilder();
+	        builder.append("BD");
+	        builder.append(getDateTime(FORMATSTRINGFORLOG));
+	        builder.append(getRandomNum(1000));
+	        return builder.toString();
+	    }
 
 	    /**
 	     * 生成订单编号

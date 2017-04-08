@@ -2,7 +2,7 @@ package com.manager.product.dto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * 产品的信息DTO
@@ -43,7 +43,15 @@ public class ProductDTO implements Serializable {
 	private String statusStr;
 	
 	private Date createTime;
-
+	
+	private String bandId;
+	
+	private Integer prodTypeCode;
+	
+	private Integer isNew;
+	
+	private Integer isHot;
+	
 	public Long getId() {
 		return id;
 	}
@@ -168,6 +176,37 @@ public class ProductDTO implements Serializable {
 	public Integer getProdSellSum() {
 		return prodSellSum;
 	}
-	
+
+	public String getBandId() {
+		return bandId;
+	}
+
+	public void setBandId(String bandId) {
+		this.bandId = bandId;
+	}
+
+	public Integer getProdTypeCode() {
+		return prodTypeCode;
+	}
+
+	public void setProdTypeCode(Integer prodTypeCode) {
+		this.prodTypeCode = prodTypeCode;
+	}
+
+	public Integer getIsNew() {
+		return isNew;
+	}
+
+	public void setIsNew(Integer isNew) {
+		this.isNew = isNew;
+	}
+
+	public Integer getIsHot() {
+		return isHot;
+	}
+
+	public void setIsHot(Integer isHot) {
+		this.isHot = isHot;
+	}
 	
 }
