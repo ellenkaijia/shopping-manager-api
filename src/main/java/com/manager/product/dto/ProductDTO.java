@@ -52,6 +52,17 @@ public class ProductDTO implements Serializable {
 	
 	private Integer isHot;
 	
+	private Integer commentCount;
+	
+	
+	public Integer getCommentCount() {
+		return commentCount;
+	}
+
+	public void setCommentCount(Integer commentCount) {
+		this.commentCount = commentCount;
+	}
+
 	public Long getId() {
 		return id;
 	}
