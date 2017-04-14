@@ -103,6 +103,18 @@ public class GenerateCode {
 	        builder.append(getRandomNum(1000));
 	        return builder.toString();
 	    }
+	    
+	    /**
+	     * 生成分类编号
+	     * @return
+	     */
+	    public static String generateSortId(){
+	        StringBuilder builder = new StringBuilder();
+	        builder.append("SO");
+	        builder.append(getDateTime(FORMATSTRINGFORLOG));
+	        builder.append(getRandomNum(1000));
+	        return builder.toString();
+	    }
 
 	    /**
 	     * 生成订单编号

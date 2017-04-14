@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.manager.product.dto.ProductBandDTO;
 import com.manager.product.dto.ProductDTO;
+import com.manager.product.dto.SortDTO;
 import com.mhdq.rpc.RpcRespDTO;
 import com.server.api.easyui.DataGrid;
 import com.server.api.easyui.Page;
@@ -32,6 +33,8 @@ public interface ProductMsService {
 	
 	DataGrid showBand(ProductBandDTO productBandDTO, Page page);
 	
+	DataGrid showSort(SortDTO sortDTO, Page page);
+	
 	List<ProductBandDTO> getProductBandList();
 	
 	RpcRespDTO<Integer> gonew(Long id);
@@ -41,4 +44,8 @@ public interface ProductMsService {
 	RpcRespDTO<Integer> gohot(Long id);
 	
 	RpcRespDTO<Integer> cacelgohot(Long id);
+	
+	RpcRespDTO<String> addSort(SortDTO sortDTO);
+	
+	List<SortDTO> getProductSortList();
 }
