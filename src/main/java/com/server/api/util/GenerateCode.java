@@ -10,9 +10,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.server.api.util.DateFormator;
-import com.server.api.util.DateUtils;
-
 /**  
 * 生成各种唯一的Id  
 *  
@@ -151,6 +148,14 @@ public class GenerateCode {
 	     */
 	    public static String generateResIdCode() {
 	    	return "RES" + DateUtils.toString(new Date(), DateFormator.YEARMONTHDAYHHMMSS) + new Random().nextInt(1000);
+	    }
+	    
+	    /**
+	     * 生成保修编号
+	     * @return
+	     */
+	    public static String generateRepairNo() {
+	        return "RP" + DateUtils.toString(new Date(), DateFormator.YEARMONTHDAYHHMMSS) + new Random().nextInt(1000);
 	    }
 
 
